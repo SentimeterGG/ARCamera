@@ -6,10 +6,11 @@ var cap:CVVideoCapture
 
 func _ready():
 	cap = CVVideoCapture.new()
-	cap.open(0, CVConsts.VideoCaptureAPIs.CAP_ANY, null)
+	#cap.open(0, CVConsts.VideoCaptureAPIs.CAP_ANY, null)
 
 func _process(_delta):
 	if !cap.is_opened():
+		print("Can't Be Opened")
 		return
 		
 	var mat = cap.read()

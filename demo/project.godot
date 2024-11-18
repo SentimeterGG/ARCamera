@@ -12,16 +12,24 @@ config_version=5
 
 config/name="OpenCV Demo"
 run/main_scene="res://opencv-node2d.tscn"
-config/features=PackedStringArray("4.2", "GL Compatibility")
+config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [debug]
 
 gdscript/warnings/integer_division=0
 
+[display]
+
+window/vsync/vsync_mode=0
+
+[editor]
+
+movie_writer/disable_vsync=true
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/gut/plugin.cfg")
+enabled=PackedStringArray()
 
 [filesystem]
 
